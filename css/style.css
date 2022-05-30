@@ -1,8 +1,135 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,500;0,600;1,600&family=Montserrat:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Roboto+Condensed:wght@300;400&display=swap");
+
+/* font-family: 'Noto Sans', sans-serif; */
+/* font-family: 'Roboto Condensed', sans-serif; */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+:root {
+  --helper: #2ec0ff;
+  --helper-tint: #afd1ef;
+  --bg: #eef5fc;
+  --para: #1b1f3b;
+  --para-tint: #0c4046;
+  --black: #131313;
+  --white: #ffffff;
+  --gradient: linear-gradient(90deg, #643a71ff, #8b5fbfff);
+  --gradientSupport: linear-gradient(90deg, #0062ff 0%, #61efff 100%);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Noto Sans", sans-serif;
+}
+h1 {
+  color: var(--heading);
+  font-size: 6rem;
+  font-weight: 600;
+}
+h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+p {
+  color: var(--para);
+  line-height: 1.6;
+  font-size: 1.7rem;
+}
+a {
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Noto Sans", sans-serif;
+}
+li {
+  list-style: none;
+}
+::selection {
+  color: var(--black);
+  background: var(--helper);
+}
+
+/* start coding */
+/* header/navbar */
+.header {
+  position: fixed;
+  top: 0;
+
+  padding: 0 6.2rem;
+  height: 10rem;
+  width: 100%;
+  background: var(--bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+  z-index: 999;
+}
+.header .logo {
+  height: 6rem;
+}
+.header .logo-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 4.8rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: var(--black);
+  transition: all 0.3s linear;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: var(--helper);
+}
+
+.icon-link:link,
+.icon-link:visited {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: var(--black);
+  transition: all 0.3s linear;
+}
+
+.icon-link:hover,
+.icon-link:active {
+  color: var(--helper);
+}
+
+.section {
+  height: 100vh;
+}
+
+.section-main {
+  background: url("../img/bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(0.2);
 }
