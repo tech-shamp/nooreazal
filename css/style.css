@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Roboto+Condensed:wght@300;400&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Roboto+Condensed:wght@300;400&display=swap);
 
 /* font-family: 'Noto Sans', sans-serif; */
 /* font-family: 'Roboto Condensed', sans-serif; */
@@ -14,10 +14,10 @@
   --helper: #2ec0ff;
   --link: #004766;
   --helper-tint: #afd1ef;
-  --bg: #eef5fc;
+  --bg: #f9f9ff;
   --para: #1b1f3b;
   --para-tint: #0c4046;
-  --black: #131313;
+  --black: #02090e;
   --white: #ffffff;
   --gradient: linear-gradient(90deg, #643a71ff, #8b5fbfff);
   --gradientSupport: linear-gradient(90deg, #0062ff 0%, #61efff 100%);
