@@ -1,2 +1,1 @@
-const log = console.log;
-log("NooreAzal Foundation");
+console.log("NooreAzal Foundation");
