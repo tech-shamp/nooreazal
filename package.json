@@ -1,0 +1,24 @@
+{
+  "name": "nooreazal",
+  "version": "1.0.0",
+  "description": "Website for NooreAzal Foundation",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tech-shamp/nooreazal-remake.git"
+  },
+  "author": "Technical Shampy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tech-shamp/nooreazal-remake/issues"
+  },
+  "homepage": "https://github.com/tech-shamp/nooreazal-remake#readme",
+  "dependencies": {
+    "express-fileupload": "^1.4.0",
+    "express.js": "^1.0.0",
+    "nodemon": "^2.0.16"
+  }
+}
