@@ -7,7 +7,7 @@ const bannerImage = document.querySelector("#banner-upload");
 const banner = document.querySelector(".banner");
 let bannerPath;
 
-const publishBtn = document.querySelector(".pubish-btn");
+const publishBtn = document.querySelector(".publish-btn");
 const uploadImage = document.querySelector("#image-upload");
 
 // banner Image Event
