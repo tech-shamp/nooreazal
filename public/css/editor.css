@@ -98,6 +98,7 @@ textarea::-webkit-scrollbar-thumb {
   border: none;
   outline: none;
   cursor: pointer;
+  font-family: "Noto Sans";
 }
 
 .btn.blueBtn {
