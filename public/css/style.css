@@ -1,10 +1,30 @@
-@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Roboto+Condensed:wght@300;400&display=swap);
+/* @import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Roboto+Condensed:wght@300;400&display=swap); */
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Regular.eot");
+  src: local("../fonts/Roboto Condensed"),
+    local("../fonts/RobotoCondensed-Regular"),
+    url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: local("../fonts/Noto Sans Bold"),
+    url("../fonts/NotoSans-Bold.woff") format("woff");
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed";
+  font-weight: normal;
+  font-style: normal;
 }
 
 html {
@@ -21,6 +41,7 @@ body {
   width: 6px;
   color: #7018aa;
 }
+
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
