@@ -71,8 +71,8 @@ let months = [
 ];
 
 // article Image Event, Define
-publishBtn.addEventListener("change", () => {
-  if (articleField.value.length && blogTitleField.value.length) {
+publishBtn.addEventListener("click", () => {
+  if (!articleField.length && !blogTitleField.length) {
     // generating id
     let letters = "abcdefghijklmnopqrstuvwxyz";
     let blogTitle = blogTitleField.value.split(" ").join("-");
@@ -84,6 +84,8 @@ publishBtn.addEventListener("change", () => {
     // setting up docName
     let docName = `${blogTitle}-${id}`;
     let date = new Date(); // for published on MetaData
+
+    console.log("clicked");
 
     // access firestore database
     db.collection("blogs")
@@ -102,5 +104,7 @@ publishBtn.addEventListener("change", () => {
       .catch((err) => {
         console.error(err);
       });
+  } else {
+    console.error("Your article is not posted");
   }
 });
