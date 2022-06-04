@@ -14,6 +14,9 @@ app.get("/", (req, res) => {
 app.get("/blog", (req, res) => {
   res.sendFile(path.join(initialPath, "blog.html"));
 });
+app.get("/:post", (req, res) => {
+  res.sendFile(path.join(initialPath, "post.html"));
+});
 app.get("/contact", (req, res) => {
   res.sendFile(path.join(initialPath, "contact.html"));
 });
@@ -26,6 +29,9 @@ app.get("/editor", (req, res) => {
 app.get("/donate", (req, res) => {
   res.sendFile(path.join(initialPath, "donate.html"));
 });
+// app.use((req, res) => {
+//   res.json("404");
+// });
 
 // uploadlinks
 app.post("/uploads", (req, res) => {

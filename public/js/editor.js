@@ -99,6 +99,7 @@ publishBtn.addEventListener("click", () => {
         } ${date.getFullYear()}`,
       })
       .then(() => {
+        location.href = `/${docName}`;
         console.log("date entered");
       })
       .catch((err) => {
