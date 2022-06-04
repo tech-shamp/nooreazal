@@ -66,7 +66,7 @@ textarea::-webkit-scrollbar-thumb {
   font-size: 1rem;
   height: 50rem;
   margin-top: 1rem;
-  line-height: 3rem;
+  line-height: 1.2rem;
   font-weight: 500;
   padding-bottom: 10rem;
   white-space: pre-wrap;
