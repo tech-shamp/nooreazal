@@ -33,7 +33,6 @@
 
 .article-image {
   max-width: 100%;
-  max-height: 40rem;
   display: block;
   margin: 3rem auto;
   object-fit: contain;
