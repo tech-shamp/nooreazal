@@ -37,3 +37,7 @@
   margin: 3rem auto;
   object-fit: contain;
 }
+
+footer {
+  margin-top: 10rem;
+}
