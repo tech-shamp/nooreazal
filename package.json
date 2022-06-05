@@ -4,7 +4,7 @@
   "description": "Website for NooreAzal Foundation",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
