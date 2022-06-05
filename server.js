@@ -25,7 +25,7 @@ app.get("/editor", (req, res) => {
   res.sendFile(path.join(initialPath, "editor.html"));
 });
 app.get("/tribute", (req, res) => {
-  res.sendFile(path.join(initialPath, "tributes.html"));
+  res.sendFile(path.join(initialPath, "tribute.html"));
 });
 app.get("/donate", (req, res) => {
   res.sendFile(path.join(initialPath, "donate.html"));
