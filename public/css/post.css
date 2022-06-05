@@ -1,8 +1,14 @@
-.blog,
-.article {
+.blog {
   position: relative;
   height: fit-content;
   padding-bottom: 0;
+}
+
+.article {
+  height: 200vh;
+  background-color: #e4e4e4;
+  border-radius: 1rem;
+  overflow: scroll;
 }
 
 .article,
@@ -39,7 +45,7 @@
 }
 
 .display-posts {
-  width: 100%;
+  width: 100rem;
   height: 40rem;
   display: flex;
   justify-content: space-between;

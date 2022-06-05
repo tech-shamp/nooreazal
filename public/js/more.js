@@ -1,8 +1,19 @@
-const blogSection = document.querySelector(".display-posts");
+const morePosts = document.querySelector(".display-posts");
 
-const createBlog = (blog) => {
+db.collection("blogs")
+  .get()
+  .then((blogs) => {
+    blogs.forEach((blog) => {
+      if (blog.id != decodeURI(location.pathname.split("/post").pop())) {
+        moreBlog(blog);
+        console.log("Function Called");
+      } else console.log("Wrong Function");
+    });
+  });
+
+const moreBlog = (blog) => {
   let data = blog.data();
-  blogSection.innerHTML += `
+  morePosts.innerHTML += `
   <div class="blog-card">
   <img src="${data.bannerImage}" class="blog-image" alt="Post">
   <h1 class="blog-title">${data.title.substring(0, 100) + "..."}</h1>
@@ -11,14 +22,3 @@ const createBlog = (blog) => {
   </div>
 `;
 };
-
-db.collection("blogs")
-  .get()
-  .then((blogs) => {
-    blogs.forEach((blog) => {
-      if (blog.id != decodeURI(location.pathname.split("/post").pop())) {
-        createBlog(blog);
-        console.log("Function Called");
-      } else console.log("Wrong Function");
-    });
-  });
