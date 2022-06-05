@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const fileUpload = require("express-fileupload");
+const { initializeApp } = require("firebase-admin");
 
 let initialPath = path.join(__dirname, "public");
 
@@ -22,6 +23,9 @@ app.get("/about", (req, res) => {
 });
 app.get("/editor", (req, res) => {
   res.sendFile(path.join(initialPath, "editor.html"));
+});
+app.get("/testimonial", (req, res) => {
+  res.sendFile(path.join(initialPath, "testimonials.html"));
 });
 app.get("/donate", (req, res) => {
   res.sendFile(path.join(initialPath, "donate.html"));
