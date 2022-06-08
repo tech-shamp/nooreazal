@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tech-shamp/nooreazal-remake.git"
+    "url": "git+https://github.com/tech-shamp/nooreazal.git"
   },
   "author": "Technical Shampy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tech-shamp/nooreazal-remake/issues"
+    "url": "https://github.com/tech-shamp/nooreazal/issues"
   },
-  "homepage": "https://github.com/tech-shamp/nooreazal-remake#readme",
+  "homepage": "https://github.com/tech-shamp/nooreazal#readme",
   "dependencies": {
     "express-fileupload": "^1.4.0",
     "express.js": "^1.0.0",
