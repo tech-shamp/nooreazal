@@ -1,7 +1,6 @@
 const express = require("express");
 const path = require("path");
 const fileUpload = require("express-fileupload");
-const { initializeApp } = require("firebase-admin");
 
 let initialPath = path.join(__dirname, "public");
 
@@ -58,6 +57,5 @@ app.use((req, res) => {
   res.json("404");
 });
 
-app.listen(process.env.PORT, () => {
-  console.log("listening.....");
-});
+app.listen(process.env.PORT, () => console.log("listening......."));
+// app.listen("3000", () => console.log("listening......."));
