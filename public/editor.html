@@ -26,63 +26,6 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/editor.css">
   <title>Editor : NooreAzal</title>
-</head>
-
-<body>
-  <!-- NavBar -->
-  <header class="text-gray-400 bg-gray-900 body-font header">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a href="/" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-        <img src="./img/_logo.png" alt="Logo" class="w-12 h-12 text-white p-1 bg-indigo-500 rounded-full">
-        <span class="ml-3 text-xl">NooreAzal Foundation</span>
-      </a>
-      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        <a href="/" class="mr-5 hover:text-white">Home</a>
-        <a href="blog" class="mr-5 hover:text-white">Blog</a>
-        <a href="tribute" class="mr-5 hover:text-white">Tribute</a>
-        <a href="contact" class="mr-5 hover:text-white">Contact</a>
-        <a href="about" class="mr-5 hover:text-white">About</a>
-      </nav>
-      <a href="donate"
-        class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
-        Donate
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-      </a>
-    </div>
-  </header>
-
-  <div class="banner">
-    <input type="file" accept="image/*" id="banner-upload" hidden>
-    <label for="banner-upload" class="banner-upload-btn">
-      <ion-icon class="upload-icon w-12 h-12" name="cloud-upload"></ion-icon>
-    </label>
-  </div>
-
-  <div class="blog">
-    <textarea class="title" type="text" placeholder="Blog Title..."></textarea>
-    <textarea class="article" type="text" placeholder="Start writing..."></textarea>
-  </div>
-
-  <div class="blog-options">
-    <button class="btn blueBtn publish-btn">Publish</button>
-    <input type="file" accept="image/*" id="image-upload" hidden>
-    <label for="image-upload" class="btn grey upload-btn">Upload Image</label>
-  </div>
-
-  <!-- script -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-  <!-- firebase -->
-  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
-
-  <!-- development -->
-  <script src="js/firebase.js"></script>
-  <script src="js/editor.js"></script>
 
   <!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
   <script type="text/javascript" async="true">
@@ -245,6 +188,63 @@
     })();
   </script>
   <!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+</head>
+
+<body>
+  <!-- NavBar -->
+  <header class="text-gray-400 bg-gray-900 body-font header">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a href="/" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+        <img src="./img/_logo.png" alt="Logo" class="w-12 h-12 text-white p-1 bg-indigo-500 rounded-full">
+        <span class="ml-3 text-xl">NooreAzal Foundation</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <a href="/" class="mr-5 hover:text-white">Home</a>
+        <a href="blog" class="mr-5 hover:text-white">Blog</a>
+        <a href="tribute" class="mr-5 hover:text-white">Tribute</a>
+        <a href="contact" class="mr-5 hover:text-white">Contact</a>
+        <a href="about" class="mr-5 hover:text-white">About</a>
+      </nav>
+      <a href="donate"
+        class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
+        Donate
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <div class="banner">
+    <input type="file" accept="image/*" id="banner-upload" hidden>
+    <label for="banner-upload" class="banner-upload-btn">
+      <ion-icon class="upload-icon w-12 h-12" name="cloud-upload"></ion-icon>
+    </label>
+  </div>
+
+  <div class="blog">
+    <textarea class="title" type="text" placeholder="Blog Title..."></textarea>
+    <textarea class="article" type="text" placeholder="Start writing..."></textarea>
+  </div>
+
+  <div class="blog-options">
+    <button class="btn blueBtn publish-btn">Publish</button>
+    <input type="file" accept="image/*" id="image-upload" hidden>
+    <label for="image-upload" class="btn grey upload-btn">Upload Image</label>
+  </div>
+
+  <!-- script -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+
+  <!-- development -->
+  <script src="js/firebase.js"></script>
+  <script src="js/editor.js"></script>
 </body>
 
 </html>
