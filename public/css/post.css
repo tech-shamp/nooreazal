@@ -43,7 +43,7 @@
   margin: 3rem auto;
   object-fit: contain;
 }
-
+/* 
 .display-posts {
   width: 100rem;
   height: 40rem;
@@ -101,4 +101,4 @@
 .btn:active {
   transform: translateY(-2px);
   box-shadow: 0 2rem 2rem 0 rgb(132 144 255 / 30%);
-}
+} */
