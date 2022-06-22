@@ -31,6 +31,9 @@ app.get("/tribute", (req, res) => {
 app.get("/donate", (req, res) => {
   res.sendFile(path.join(initialPath, "donate.html"));
 });
+app.get("/privacy", (req, res) => {
+  res.sendFile(path.join(initialPath, "privacy.html"));
+});
 
 // uploadlinks
 app.post("/uploads", (req, res) => {
